@@ -75,12 +75,13 @@ header {
 }
 
 .nav_bar a {
-    color: aliceblue;
+    color: dodgerblue;
+    text-shadow: 0 0 5px rgba(0,0,0,0.8);
     text-decoration: none;
 }
 
 .nav_bar a:hover {
-    color: dodgerblue;
+    color: cyan;
 }
 
 .title {
@@ -147,7 +148,7 @@ header {
 .about, .contact {
     padding: 50px 30px;
     width: 50vw;
-    text-align: justify;
+    transition: padding 0.2s;
 }
 
 .about {
@@ -159,10 +160,22 @@ header {
     color: white;
 }
 
-.contact ul {
-    list-style: none;
-    padding: 0;
+.contact_opt li {
     margin: 5px;
+}
+
+.contact_opt a {
+    color: white;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.contact_opt a:hover {
+    color: blueviolet;
+}
+
+.about:hover, .contact:hover {
+    padding: 50px 60px;
 }
 
 footer {
@@ -173,8 +186,3 @@ footer {
     color: white;
 }
 
-.fas {
-    height: 100px;
-    width: 100px;
-    color: white;
-}
